@@ -1,0 +1,16 @@
+event(policy_planning_staff__france_, director, france, 1974, 9, 1978, 9).
+event(policy_planning_staff__france_, director, thierry_de_montbrial, 1974, 9, 1978, 9).
+event(policy_planning_staff__france_, director, france, 1979, 9, 1984, 9).
+event(policy_planning_staff__france_, director, jean_louis_gergorin, 1979, 9, 1984, 9).
+event(policy_planning_staff__france_, director, france, 1984, 9, 1989, 9).
+event(policy_planning_staff__france_, director, philippe_coste, 1984, 9, 1989, 9).
+event(policy_planning_staff__france_, director, france, 1989, 9, 1993, 9).
+event(policy_planning_staff__france_, director, jean_marie_guehenno, 1989, 9, 1993, 9).
+event(policy_planning_staff__france_, director, france, 1993, 9, 1995, 9).
+event(policy_planning_staff__france_, director, bruno_racine, 1993, 9, 1995, 9).
+event(policy_planning_staff__france_, director, france, 1995, 9, 1999, 9).
+event(policy_planning_staff__france_, director, gilles_andreani, 1995, 9, 1999, 9).
+event(policy_planning_staff__france_, director, france, 1999, 9, 2002, 9).
+event(policy_planning_staff__france_, director, michel_foucher, 1999, 9, 2002, 9).
+event(policy_planning_staff__france_, director, france, 2002, 9, 2004, 9).
+event(policy_planning_staff__france_, director, gilles_andreani, 2002, 9, 2004, 9).

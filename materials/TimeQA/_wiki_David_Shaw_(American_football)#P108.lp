@@ -1,0 +1,12 @@
+event(david_shaw__american_football_, employer, american_football, 1995, 9, 1997, 9).
+event(david_shaw__american_football_, employer, western_washington_university, 1995, 9, 1997, 9).
+event(david_shaw__american_football_, employer, american_football, 1997, 9, 1998, 9).
+event(david_shaw__american_football_, employer, philadelphia_eagles, 1997, 9, 1998, 9).
+event(david_shaw__american_football_, employer, american_football, 1998, 9, 2002, 9).
+event(david_shaw__american_football_, employer, oakland_raiders, 1998, 9, 2002, 9).
+event(david_shaw__american_football_, employer, american_football, 2002, 9, 2006, 9).
+event(david_shaw__american_football_, employer, baltimore_ravens, 2002, 9, 2006, 9).
+event(david_shaw__american_football_, employer, american_football, 2006, 9, 2007, 9).
+event(david_shaw__american_football_, employer, university_of_san_diego, 2006, 9, 2007, 9).
+event(david_shaw__american_football_, employer, american_football, 2007, 9, 2008, 9).
+event(david_shaw__american_football_, employer, stanford, 2007, 9, 2008, 9).

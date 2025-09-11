@@ -1,0 +1,11 @@
+event(george_thompson, play_for, liverpool_united_under_20_soccer_team, 2006, 1, 2007, 12).
+event(george_thompson, play_for, newcastle_united_football_club, 2007, 1, 2009, 12).
+event(george_thompson, play_for, hillside_united_f_c_, 2007, 1, 2010, 12).
+event(george_thompson, play_for, riverside_united, 2010, 1, 2012, 12).
+event(george_thompson, play_for, blackburn_rovers, 2015, 1, 2016, 12).
+event(george_thompson, born_in, greenwood, 1990, 1, 1990, 1).
+event(george_thompson, play_for, united_tigers, 1998, 1, 1998, 1).
+event(george_thompson, play_for, liverpool_national_under_20_football_team, 2009, 1, 2009, 1).
+event(george_thompson, play_for, oceanside_united_fc, 2011, 1, 2011, 1).
+event(george_thompson, play_for, lionheart_fc, 2012, 1, 2012, 1).
+event(george_thompson, play_for, purple_tigers, 2016, 1, 2016, 1).

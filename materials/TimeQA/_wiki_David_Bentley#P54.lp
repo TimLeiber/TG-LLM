@@ -1,0 +1,12 @@
+event(david_bentley, team, arsenal, 2001, 9, 2004, 9).
+event(david_bentley, team, norwich_city, 2004, 9, 2005, 9).
+event(david_bentley, team, blackburn_rovers, 2005, 9, 2006, 9).
+event(david_bentley, team, england_under_21_team, 2005, 9, 2006, 9).
+event(david_bentley, team, blackburn_rovers, 2006, 9, 2007, 9).
+event(david_bentley, team, england_under_21_team, 2006, 9, 2007, 9).
+event(david_bentley, team, blackburn, 2007, 9, 2008, 9).
+event(david_bentley, team, england_under_21_team, 2007, 9, 2008, 9).
+event(david_bentley, team, tottenham_hotspur, 2008, 9, 2012, 9).
+event(david_bentley, team, birmingham_city, 2008, 9, 2012, 9).
+event(david_bentley, team, west_ham_united, 2008, 9, 2012, 9).
+event(david_bentley, team, fc_rostov, 2012, 9, 2013, 9).

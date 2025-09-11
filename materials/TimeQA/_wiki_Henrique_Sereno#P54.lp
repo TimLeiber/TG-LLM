@@ -1,0 +1,9 @@
+event(henrique_sereno, team, o_elvas_cad, 2004, 9, 2005, 9).
+event(henrique_sereno, team, vitoria_de_guimaraes, 2005, 9, 2010, 9).
+event(henrique_sereno, team, real_valladolid, 2010, 9, 2011, 9).
+event(henrique_sereno, team, fc_porto, 2010, 9, 2011, 9).
+event(henrique_sereno, team, _1___fc_koln, 2011, 9, 2012, 9).
+event(henrique_sereno, team, valladolid, 2012, 9, 2013, 9).
+event(henrique_sereno, team, kayserispor, 2013, 9, 2015, 9).
+event(henrique_sereno, team, portugal, 2013, 9, 2015, 9).
+event(henrique_sereno, team, _1___fsv_mainz_05, 2015, 9, 2016, 9).

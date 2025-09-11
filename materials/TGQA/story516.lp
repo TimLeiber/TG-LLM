@@ -1,0 +1,9 @@
+event(michael_j__foster, married_to, liam_brooks, 1918, 1, 1925, 12).
+event(liam_brooks, married_to, michael_j__foster, 1918, 1, 1925, 12).
+event(michael_j__foster, married_to, emily_thompson, 1926, 1, 1968, 12).
+event(emily_thompson, married_to, michael_j__foster, 1926, 1, 1968, 12).
+event(liam_brooks, born_in, san_francisco, 1885, 1, 1885, 1).
+event(michael_j__foster, born_in, denver, 1889, 1, 1889, 1).
+event(liam_brooks, die, brookville_heights__boston, 1965, 1, 1965, 1).
+event(michael_j__foster, die, astonville__alabama, 1968, 1, 1968, 1).
+event(emily_thompson, die, astonville__alabama, 1975, 1, 1975, 1).

@@ -1,0 +1,12 @@
+event(jim_morton__footballer__born_1956_, team, footballer__born_1956, 1974, 9, 1978, 9).
+event(jim_morton__footballer__born_1956_, team, brechin_city_f_c__, 1974, 9, 1978, 9).
+event(jim_morton__footballer__born_1956_, team, footballer__born_1956, 1978, 9, 1979, 9).
+event(jim_morton__footballer__born_1956_, team, berwick_rangers_f_c__, 1978, 9, 1979, 9).
+event(jim_morton__footballer__born_1956_, team, footballer__born_1956, 1979, 9, 1986, 9).
+event(jim_morton__footballer__born_1956_, team, st_johnstone_f_c__, 1979, 9, 1986, 9).
+event(jim_morton__footballer__born_1956_, team, footballer__born_1956, 1986, 9, 1987, 9).
+event(jim_morton__footballer__born_1956_, team, brisbane_lions, 1986, 9, 1987, 9).
+event(jim_morton__footballer__born_1956_, team, footballer__born_1956, 1987, 9, 1990, 9).
+event(jim_morton__footballer__born_1956_, team, forfar_athletic_f_c__, 1987, 9, 1990, 9).
+event(jim_morton__footballer__born_1956_, team, footballer__born_1956, 1990, 9, 1993, 9).
+event(jim_morton__footballer__born_1956_, team, arbroath, 1990, 9, 1993, 9).

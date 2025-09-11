@@ -1,0 +1,12 @@
+event(john_williams__footballer__born_1968_, team, footballer__born_1968, 1995, 9, 1997, 9).
+event(john_williams__footballer__born_1968_, team, wycombe_wanderers, 1995, 9, 1997, 9).
+event(john_williams__footballer__born_1968_, team, footballer__born_1968, 1997, 9, 1998, 9).
+event(john_williams__footballer__born_1968_, team, walsall___exeter_city, 1997, 9, 1998, 9).
+event(john_williams__footballer__born_1968_, team, footballer__born_1968, 1998, 9, 1999, 9).
+event(john_williams__footballer__born_1968_, team, cardiff_city, 1998, 9, 1999, 9).
+event(john_williams__footballer__born_1968_, team, footballer__born_1968, 2000, 9, 2001, 9).
+event(john_williams__footballer__born_1968_, team, york_city___darlington, 2000, 9, 2001, 9).
+event(john_williams__footballer__born_1968_, team, footballer__born_1968, 2003, 9, 2004, 9).
+event(john_williams__footballer__born_1968_, team, kidderminster_harriers, 2003, 9, 2004, 9).
+event(john_williams__footballer__born_1968_, team, footballer__born_1968, 2007, 9, 2008, 9).
+event(john_williams__footballer__born_1968_, team, willenhall_town, 2007, 9, 2008, 9).

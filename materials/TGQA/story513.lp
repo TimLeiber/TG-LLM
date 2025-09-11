@@ -1,0 +1,12 @@
+event(michael_sullivan, play_for, houston_astros_baseball_team, 2002, 1, 2003, 12).
+event(michael_sullivan, play_for, virginia_national_under_21_hockey_team, 2004, 1, 2006, 12).
+event(michael_sullivan, play_for, manchester_united_f_c_, 2003, 1, 2007, 12).
+event(michael_sullivan, play_for, iverson_united, 2009, 1, 2010, 12).
+event(michael_sullivan, play_for, forest_united_f_c_, 2007, 1, 2010, 12).
+event(michael_sullivan, play_for, sapphire_united_f_c_, 2010, 1, 2015, 12).
+event(michael_sullivan, play_for, brighton_united_f_c_, 2014, 1, 2015, 12).
+event(michael_sullivan, play_for, hartford_united_f_c_, 2015, 1, 2016, 12).
+event(michael_sullivan, born_in, everfield, 1984, 1, 1984, 1).
+event(michael_sullivan, play_for, liverpool_athletic_club, 2004, 1, 2004, 1).
+event(michael_sullivan, play_for, manchester_united_f_c_, 2009, 1, 2009, 1).
+event(michael_sullivan, play_for, ashford_united_f_c_, 2014, 1, 2014, 1).

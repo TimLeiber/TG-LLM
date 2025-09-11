@@ -1,0 +1,9 @@
+event(kenny_miller, team, hibernian, 1998, 9, 1999, 9).
+event(kenny_miller, team, rangers, 2000, 9, 2001, 9).
+event(kenny_miller, team, wolverhampton_wanderers, 2001, 9, 2006, 9).
+event(kenny_miller, team, celtic, 2006, 9, 2007, 9).
+event(kenny_miller, team, derby_county, 2007, 9, 2008, 9).
+event(kenny_miller, team, bursaspor, 2011, 9, 2012, 9).
+event(kenny_miller, team, cardiff_city, 2011, 9, 2012, 9).
+event(kenny_miller, team, vancouver_whitecaps_fc, 2011, 9, 2012, 9).
+event(kenny_miller, team, vancouver_whitecaps_fc, 2012, 9, 2014, 9).

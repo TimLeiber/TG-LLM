@@ -1,0 +1,13 @@
+event(matthew_reed_association_footballer_, play_for, springfield_united, 1983, 1, 1988, 12).
+event(matthew_reed_association_footballer_, play_for, baltimore_eagles_national_under_21_football_team, 1988, 1, 1989, 12).
+event(matthew_reed_association_footballer_, play_for, brighton_united_f_c_, 1988, 1, 1990, 12).
+event(matthew_reed_association_footballer_, play_for, manchester_united_f_c_, 1990, 1, 1991, 12).
+event(matthew_reed_association_footballer_, play_for, manchester_city_f_c_, 1991, 1, 1993, 12).
+event(matthew_reed_association_footballer_, play_for, bayview_borough_f_c_, 1993, 1, 1995, 12).
+event(matthew_reed_association_footballer_, play_for, boston_united_f_c_, 1995, 1, 1997, 12).
+event(matthew_reed_association_footballer_, play_for, oceanview_united_soccer_club, 1988, 1, 1998, 12).
+event(matthew_reed_association_footballer_, play_for, baytown_wanderers_f_c_, 1997, 1, 2000, 12).
+event(matthew_reed_association_footballer_, play_for, newport_city_f_c_, 2000, 1, 2001, 12).
+event(matthew_reed_association_footballer_, play_for, hartford_united_f_c_, 2001, 1, 2002, 12).
+event(matthew_reed_association_footballer_, born_in, everest_city, 1965, 1, 1965, 1).
+event(matthew_reed_association_footballer_, play_for, ashford_united_f_c_, 2002, 1, 2002, 1).

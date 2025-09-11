@@ -1,0 +1,10 @@
+event(john_thorrington, team, manchester_united, 1997, 9, 1999, 9).
+event(john_thorrington, team, chadwick_school, 1997, 9, 1999, 9).
+event(john_thorrington, team, bolton_wanderers, 1999, 9, 2001, 9).
+event(john_thorrington, team, bayer_leverkusen, 1999, 9, 2001, 9).
+event(john_thorrington, team, huddersfield_town, 2001, 9, 2003, 9).
+event(john_thorrington, team, grimsby_town, 2003, 9, 2005, 9).
+event(john_thorrington, team, mariners, 2003, 9, 2005, 9).
+event(john_thorrington, team, chicago_fire, 2005, 9, 2008, 9).
+event(john_thorrington, team, vancouver_whitecaps_fc, 2011, 9, 2012, 9).
+event(john_thorrington, team, chicago_fire, 2011, 9, 2012, 9).

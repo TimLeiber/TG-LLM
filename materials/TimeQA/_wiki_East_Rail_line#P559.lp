@@ -1,0 +1,9 @@
+event(terminus, of, mong_kok_east, 1910, 10, 1911, 10).
+event(terminus, of, lo_wu_stations, 1911, 10, 1949, 10).
+event(terminus, of, kowloon_station, 1949, 10, 1975, 11).
+event(terminus, of, hong_kong_sar, 1975, 11, 2007, 8).
+event(terminus, of, lok_ma_chau_stations, 2007, 8, 2021, 9).
+event(terminus, of, hung_hom_station, 2007, 8, 2021, 9).
+event(terminus, of, hung_hom, 2021, 9, 2021, 9).
+event(terminus, of, admiralty_section, 2021, 9, 2021, 9).
+event(terminus, of, admiralty_station__, 2021, 9, 2022, 9).

@@ -1,0 +1,10 @@
+event(emily_jones, married_to, katherine_evans, 1949, 1, 1958, 12).
+event(katherine_evans, married_to, emily_jones, 1949, 1, 1958, 12).
+event(emma_bennett, married_to, emily_jones, 1965, 1, 1988, 12).
+event(katherine_evans, born_in, san_francisco, 1908, 1, 1908, 1).
+event(emily_jones, born_in, oceanview, 1910, 1, 1910, 1).
+event(emma_bennett, born_in, harrison, 1916, 1, 1916, 1).
+event(katherine_evans, die, brookville_heights__boston, 1978, 1, 1978, 1).
+event(emily_jones, married_to, emma_bennett, 1988, 1, 1988, 1).
+event(emily_jones, die, millwood_town__austin, 1988, 1, 1988, 1).
+event(emma_bennett, die, riverdale__idaho, 1999, 1, 1999, 1).

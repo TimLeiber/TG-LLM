@@ -3,6 +3,8 @@ import re
 from datasets import load_dataset
 import pandas as pd
 import json
+import unicodedata
+import os
 
 
 datasets_ = {dataset: load_dataset("sxiong/TGQA", dataset)['test']
@@ -10,6 +12,15 @@ datasets_ = {dataset: load_dataset("sxiong/TGQA", dataset)['test']
             }
 
 # print(datasets_['TimeQA_Story_TG_Trans']['TG'])
+
+def clean_term(i: str):
+    if i[0].isdigit():
+        i = '_' + i
+    i = unicodedata.normalize("NFKD", i).encode("ascii", "ignore").decode("ascii")
+    for tok in ['(', ')', ',', '.', '&', '-', '/']:
+        i = i.replace(tok, '_')
+    return i
+
 
 def tg_to_asp(TG, TG_type: str) -> str:
     """
@@ -52,6 +63,7 @@ def tg_to_asp(TG, TG_type: str) -> str:
                         'produced': 'create',
                         'crafted': 'create'
                         }
+        
         # dictionary to store ongoing events (since start and end have different entries in the graph)
         ongoing_events = {}
         # facts to be written into an asp instance file
@@ -88,14 +100,14 @@ def tg_to_asp(TG, TG_type: str) -> str:
                         elif start_or_end == 'ends':
                             if event_key in ongoing_events:
                                 start_year = ongoing_events[event_key]
-                                facts += f'event({start_year}.01, {year}.12, {subject}, {relation_token}, {obj}).\n'
+                                facts += f'event({clean_term(subject)}, {clean_term(relation_token)}, {clean_term(obj)}, {start_year}, 1, {year}, 12).\n'
                                 del ongoing_events[event_key]
                         
                         break  # Found matching relation
 
         # Handle events that only had starts (no explicit ends)
         for (subject, relation_token, obj), start_year in ongoing_events.items():
-            facts += f'event({start_year}.01, {start_year}.01, {subject}, {relation_token}, {obj}).\n'
+            facts += f'event({clean_term(subject)}, {clean_term(relation_token)}, {clean_term(obj)}, {start_year}, 1, {start_year}, 1).\n'
 
     elif TG_type == 'TimeQA':
         facts = ''
@@ -110,8 +122,8 @@ def tg_to_asp(TG, TG_type: str) -> str:
             # parse start and end strings into timestamp float
             start_date = parser.parse(start_date.strip())
             end_date = parser.parse(end_date.strip())
-            start_date = float(f"{start_date.year}.{start_date.month:02d}")
-            end_date = float(f"{end_date.year}.{end_date.month:02d}")
+            start_year, start_moth = int(f"{start_date.year}"), int(f"{start_date.month:02d}")
+            end_year, end_month = int(f"{end_date.year}"), int(f"{end_date.month:02d}")
             
             # extract entities (nodes) in temporal graph
             poss_match = re.match(r"(.+?)'s\s+(.*?)\s+", event.strip())
@@ -125,7 +137,6 @@ def tg_to_asp(TG, TG_type: str) -> str:
                 in_nodes = [node.strip().lower().replace(' ', '_') for node in in_nodes]
             
             else:
-                # 3. Fallback: direct pattern: "<subject> <relation> (object)"
                 # Assumes format like "Galatasaray S.K. (football) is ( Unknown )"
                 direct_match = re.match(r"(.+?)\s+(\w+)\s+", event.strip())
                 
@@ -140,7 +151,7 @@ def tg_to_asp(TG, TG_type: str) -> str:
                 in_nodes = [node.strip().lower().replace(' ', '_') for node in in_nodes]
             
             for in_node in in_nodes:
-                facts += f'event({start_date}, {end_date}, {out_node}, {relation}, {in_node}).\n'
+                facts += f'event({clean_term(out_node)}, {clean_term(relation)}, {clean_term(in_node)}, {start_year}, {start_moth}, {end_year}, {end_month}).\n'
     
     # my implementation does not support TempReason data.
     # The questions from the two other datasets alone are already way too many if we were to use all $30 for text complete
@@ -154,15 +165,29 @@ def tg_to_asp(TG, TG_type: str) -> str:
     
 
 
-def create_asp_instance_files(dataset) -> None:
+def create_asp_instance_files(dataset, TG_type: str) -> None:
     """
     given a TGR dataset generate all samples corresponding instance files containing the corresp
     """
-    pass
+
+
+    # Create directory if it doesn't exist
+    directory = f"materials/{TG_type}"
+    os.makedirs(directory, exist_ok=True)
+
+    for instance in dataset:
+        # extract identifier of dataset example and construct corresponding asp instance file
+        file_name = instance['id'].replace('/', '_') + '.lp'
+        facts = tg_to_asp(instance['TG'], TG_type)
+        # Write facts to file
+        file_path = os.path.join(directory, file_name)
+        with open(file_path, 'w') as f:
+            f.write(facts)
 
 def reason(instance_path, encoding_path) -> str:
     pass
 
 
 if __name__ == '__main__':
-    pass
+    create_asp_instance_files(datasets_['TGQA_Story_TG_Trans'], 'TGQA')
+    create_asp_instance_files(datasets_['TimeQA_Story_TG_Trans'], 'TimeQA')

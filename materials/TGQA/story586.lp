@@ -1,0 +1,10 @@
+event(henry_carver, married_to, liam_mitchell, 1941, 1, 1948, 12).
+event(liam_mitchell, married_to, henry_carver, 1941, 1, 1948, 12).
+event(liam_mitchell, married_to, david_carson__artist_, 1950, 1, 1959, 12).
+event(david_carson_artist_, born_in, springfield, 1907, 1, 1907, 1).
+event(henry_carver, born_in, glenville, 1917, 1, 1917, 1).
+event(liam_mitchell, born_in, san_francisco, 1921, 1, 1921, 1).
+event(david_carson_artist_, married_to, liam_mitchell, 1950, 1, 1950, 1).
+event(david_carson_artist_, die, willowdale, 1959, 1, 1959, 1).
+event(henry_carver, die, atlanta, 1990, 1, 1990, 1).
+event(liam_mitchell, die, oceanview, 2004, 1, 2004, 1).

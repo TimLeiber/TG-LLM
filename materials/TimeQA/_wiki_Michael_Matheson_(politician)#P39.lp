@@ -1,0 +1,10 @@
+event(michael_matheson__politician_, position, politician, 1999, 5, 2003, 3).
+event(michael_matheson__politician_, position, member_of_the_scottish_parliament, 1999, 5, 2003, 3).
+event(michael_matheson__politician_, position, politician, 2003, 5, 2007, 4).
+event(michael_matheson__politician_, position, member_of_the_scottish_parliament, 2003, 5, 2007, 4).
+event(michael_matheson__politician_, position, politician, 2007, 5, 2011, 3).
+event(michael_matheson__politician_, position, member_of_the_scottish_parliament, 2007, 5, 2011, 3).
+event(michael_matheson__politician_, position, politician, 2011, 5, 2016, 3).
+event(michael_matheson__politician_, position, member_of_the_scottish_parliament, 2011, 5, 2016, 3).
+event(michael_matheson__politician_, position, politician, 2016, 5, 2017, 5).
+event(michael_matheson__politician_, position, member_of_the_scottish_parliament, 2016, 5, 2017, 5).

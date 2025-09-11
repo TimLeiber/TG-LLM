@@ -1,0 +1,11 @@
+event(martin_palermo, team, estudiantes_de_la_plata, 1992, 9, 1997, 9).
+event(martin_palermo, team, boca_juniors, 1997, 9, 1999, 9).
+event(martin_palermo, team, boca_juniors_of_argentina, 1999, 9, 2001, 9).
+event(martin_palermo, team, villarreal_of_the_spanish_la_liga, 1999, 9, 2001, 9).
+event(martin_palermo, team, argentina_national_team, 1999, 9, 2001, 9).
+event(martin_palermo, team, villarreal_of_the_spanish_la_liga, 2001, 9, 2003, 9).
+event(martin_palermo, team, villarreal_of_the_spanish_la_liga, 2003, 9, 2004, 9).
+event(martin_palermo, team, real_betis, 2003, 9, 2004, 9).
+event(martin_palermo, team, alaves_of_the_spanish_second_division, 2003, 9, 2004, 9).
+event(martin_palermo, team, boca_juniors, 2004, 9, 2010, 9).
+event(martin_palermo, team, argentina_national_teams, 2010, 9, 2010, 9).

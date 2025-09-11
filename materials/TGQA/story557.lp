@@ -1,0 +1,9 @@
+event(sophia_turner, married_to, oliver_thompson, 1922, 1, 1926, 12).
+event(oliver_thompson, married_to, sophia_turner, 1922, 1, 1926, 12).
+event(sophia_turner, married_to, lily_thompson, 1932, 1, 1934, 12).
+event(lily_thompson, married_to, sophia_turner, 1932, 1, 1934, 12).
+event(oliver_thompson, born_in, edgewater__illinois, 1887, 1, 1887, 1).
+event(sophia_turner, born_in, wanderers, 1899, 1, 1899, 1).
+event(sophia_turner, die, san_francisco, 1960, 1, 1960, 1).
+event(oliver_thompson, die, san_francisco, 1974, 1, 1974, 1).
+event(lily_thompson, die, dover__delaware, 1974, 1, 1974, 1).

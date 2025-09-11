@@ -1,0 +1,9 @@
+event(luke_johnson, born_in, austin, 1934, 1, 1934, 1).
+event(luke_johnson_stu, die, san_francisco_state_university, 1954, 1, 1954, 1).
+event(luke_johnson, work_at, san_francisco_state_university, 1961, 1, 1961, 1).
+event(luke_johnson_stu, die, oceanview_college__boston, 1961, 1, 1961, 1).
+event(luke_johnson, work_at, cambridge_institute_for_social_sciences, 1972, 1, 1972, 1).
+event(luke_johnson, work_at, harvard_university, 1978, 1, 1978, 1).
+event(luke_johnson, work_at, oceanview_college__boston, 1986, 1, 1986, 1).
+event(luke_johnson, work_at, oakland_college, 1993, 1, 1993, 1).
+event(luke_johnson, win_prize, lionheart_memorial_award_in_financial_studies, 2002, 1, 2002, 1).
