@@ -1,0 +1,13 @@
+event(jordan_thompson, play_for, crimsonville_national_under_16_soccer_club, 1984, 1, 1985, 12).
+event(jordan_thompson, play_for, vq_malvern_wanderers, 1988, 1, 1989, 12).
+event(jordan_thompson, play_for, blue_thunder_united, 1989, 1, 1991, 12).
+event(jordan_thompson, play_for, manchester_united, 1991, 1, 1992, 12).
+event(jordan_thompson, play_for, valencia_united, 1992, 1, 1993, 12).
+event(jordan_thompson, play_for, london_united, 1993, 1, 1994, 12).
+event(jordan_thompson, play_for, manchester_city, 1994, 1, 1997, 12).
+event(jordan_thompson, play_for, redwood_rovers, 1997, 1, 1999, 12).
+event(jordan_thompson, play_for, fc_richmond, 1999, 1, 2000, 12).
+event(jordan_thompson, born_in, wilmington, 1969, 1, 1969, 1).
+event(jordan_thompson, play_for, arizona_city_national_under_18_football_team, 1986, 1, 1986, 1).
+event(jordan_thompson, play_for, greenwich_national_soccer_club, 1990, 1, 1990, 1).
+event(jordan_thompson, play_for, united_tigers, 1991, 1, 1991, 1).

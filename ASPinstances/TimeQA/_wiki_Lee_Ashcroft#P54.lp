@@ -1,0 +1,11 @@
+event(lee_ashcroft, team, preston_north_end, 1987, 9, 1993, 9).
+event(lee_ashcroft, team, west_bromwich_albion, 1993, 9, 1996, 9).
+event(lee_ashcroft, team, grimsby_town, 1998, 9, 2000, 9).
+event(lee_ashcroft, team, wigan_athletic, 2000, 9, 2002, 9).
+event(lee_ashcroft, team, port_vale, 2000, 9, 2002, 9).
+event(lee_ashcroft, team, huddersfield_town, 2000, 9, 2002, 9).
+event(lee_ashcroft, team, southport, 2003, 9, 2004, 9).
+event(lee_ashcroft, team, huddersfield_town, 2003, 9, 2004, 9).
+event(lee_ashcroft, team, wigan_athletic, 2003, 9, 2004, 9).
+event(lee_ashcroft, team, chorley, 2004, 9, 2010, 9).
+event(lee_ashcroft, team, kendal_town, 2004, 9, 2010, 9).

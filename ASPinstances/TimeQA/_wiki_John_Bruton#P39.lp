@@ -1,0 +1,10 @@
+event(john_bruton, position, minister_for_finance, 1981, 6, 1982, 3).
+event(john_bruton, position, minister_for_industry_and_energy, 1982, 12, 1983, 12).
+event(john_bruton, position, minister_for_industry___trade___commerce_and_tourism, 1983, 12, 1986, 2).
+event(john_bruton, position, minister_for_finance, 1986, 2, 1987, 1).
+event(john_bruton, position, minister_for_the_public_service, 1987, 1, 1987, 3).
+event(john_bruton, position, minister_for_finance, 1987, 1, 1987, 3).
+event(john_bruton, position, leader_of_fine_gael, 1990, 11, 1994, 12).
+event(john_bruton, position, taoiseach, 1994, 12, 1996, 11).
+event(john_bruton, position, leader_of_fine_gael, 1994, 12, 1996, 11).
+event(john_bruton, position, minister_for_transport, 1996, 11, 1996, 12).

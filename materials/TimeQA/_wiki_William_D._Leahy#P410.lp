@@ -1,9 +1,0 @@
-event(william_d__leahy, military, ensign, 1899, 7, 1902, 7).
-event(william_d__leahy, military, unknown, 1902, 7, 1909, 9).
-event(william_d__leahy, military, lt___cmdr, 1909, 9, 1916, 8).
-event(william_d__leahy, military, unknown, 1916, 8, 1918, 7).
-event(william_d__leahy, military, command, 1918, 7, 1927, 10).
-event(william_d__leahy, military, flag_rank, 1927, 10, 1935, 7).
-event(william_d__leahy, military, vice_admiral, 1927, 10, 1935, 7).
-event(william_d__leahy, military, commander, 1927, 10, 1935, 7).
-event(william_d__leahy, military, commander_in_chief, 1935, 7, 1937, 1).

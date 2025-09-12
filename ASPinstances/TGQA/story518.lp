@@ -1,0 +1,12 @@
+event(ethan_mitchell, play_for, golden_state_national_under_19_football_team, 2009, 1, 2010, 12).
+event(ethan_mitchell, play_for, oakland_united_f_c_, 2012, 1, 2013, 12).
+event(ethan_mitchell, play_for, chicago_bulls, 2009, 1, 2013, 12).
+event(ethan_mitchell, play_for, brighton_united, 2013, 1, 2014, 12).
+event(ethan_mitchell, play_for, westminster_united, 2014, 1, 2015, 12).
+event(ethan_mitchell, play_for, greenwood_united, 2015, 1, 2016, 12).
+event(ethan_mitchell, born_in, portland, 1991, 1, 1991, 1).
+event(ethan_mitchell, play_for, blackburn_rovers_f_c_, 2010, 1, 2010, 1).
+event(ethan_mitchell, play_for, california_dolphins, 2011, 1, 2011, 1).
+event(ethan_mitchell, play_for, manchester_united_f_c_, 2013, 1, 2013, 1).
+event(ethan_mitchell, play_for, queensland_united_f_c_, 2012, 1, 2012, 1).
+event(ethan_mitchell, play_for, exeter_city_f_c_, 2014, 1, 2014, 1).

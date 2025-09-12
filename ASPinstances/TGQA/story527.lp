@@ -1,0 +1,12 @@
+event(oliver_thompson_footballer_, play_for, birmingham_lions_football_club, 2005, 1, 2006, 12).
+event(oliver_thompson_footballer_, play_for, baltimore_eagles_national_under_21_football_team, 2007, 1, 2008, 12).
+event(oliver_thompson_footballer_, play_for, manchester_united_f_c_, 2008, 1, 2009, 12).
+event(oliver_thompson_footballer_, play_for, riverside_united_f_c_, 2009, 1, 2012, 12).
+event(oliver_thompson_footballer_, play_for, brighton_united_f_c_, 2012, 1, 2014, 12).
+event(oliver_thompson_footballer_, born_in, ashton__city_, 1987, 1, 1987, 1).
+event(oliver_thompson_footballer_, play_for, bluefield_national_under_17_football_team, 2003, 1, 2003, 1).
+event(oliver_thompson_footballer_, play_for, cameron_town_football_club, 2006, 1, 2006, 1).
+event(oliver_thompson_footballer_, play_for, liverpool_united_f_c_, 2008, 1, 2008, 1).
+event(oliver_thompson_footballer_, play_for, iverson_united, 2009, 1, 2009, 1).
+event(oliver_thompson_footballer_, play_for, union_city_united_f_c_, 2009, 1, 2009, 1).
+event(oliver_thompson_footballer_, play_for, newport_city_f_c_, 2011, 1, 2011, 1).

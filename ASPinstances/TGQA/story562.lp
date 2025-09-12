@@ -1,0 +1,12 @@
+event(sophie_carter, married_to, sophia_cruz, 1930, 1, 1932, 12).
+event(sophia_cruz, married_to, sophie_carter, 1930, 1, 1932, 12).
+event(liam_henderson, married_to, liam_thompson, 1946, 1, 1953, 12).
+event(liam_henderson, married_to, sophie_carter, 1953, 1, 1972, 12).
+event(sophie_carter, born_in, lancaster, 1907, 1, 1907, 1).
+event(maxwell_reynolds_director_, born_in, harrison, 1908, 1, 1908, 1).
+event(liam_henderson, born_in, leicester, 1915, 1, 1915, 1).
+event(sophia_cruz, die, leicester, 1932, 1, 1932, 1).
+event(sophie_carter, married_to, maxwell_reynolds__director_, 1936, 1, 1936, 1).
+event(maxwell_reynolds_director_, married_to, sophie_carter, 1936, 1, 1936, 1).
+event(sophie_carter, married_to, liam_henderson, 1953, 1, 1953, 1).
+event(sophie_carter, die, oceanview, 1994, 1, 1994, 1).

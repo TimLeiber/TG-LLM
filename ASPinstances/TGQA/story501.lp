@@ -1,0 +1,10 @@
+event(paul_anderson, play_for, northern_rovers_f_c_, 1993, 1, 1995, 12).
+event(paul_anderson, play_for, blazing_tigers__hartford_, 1995, 1, 2001, 12).
+event(paul_anderson, play_for, london_sporting_club, 2001, 1, 2003, 12).
+event(paul_anderson, play_for, brighton_united_c, 2003, 1, 2004, 12).
+event(paul_anderson, play_for, denver_national_under_20_basketball_team, 2003, 1, 2004, 12).
+event(paul_anderson, play_for, ocean_city_football_club, 2004, 1, 2005, 12).
+event(paul_anderson, play_for, oliverstown_united, 2005, 1, 2007, 12).
+event(paul_anderson, play_for, greenfield_united__chicago_, 2011, 1, 2013, 12).
+event(paul_anderson, born_in, austin, 1983, 1, 1983, 1).
+event(paul_anderson, play_for, los_angeles_tigers_football_team, 2001, 1, 2001, 1).

@@ -1,0 +1,10 @@
+event(robert_hall__footballer_, team, footballer, 2008, 9, 2010, 9).
+event(robert_hall__footballer_, team, unknown, 2008, 9, 2010, 9).
+event(robert_hall__footballer_, team, footballer, 2010, 9, 2011, 9).
+event(robert_hall__footballer_, team, west_ham_united, 2010, 9, 2011, 9).
+event(robert_hall__footballer_, team, footballer, 2011, 9, 2012, 9).
+event(robert_hall__footballer_, team, england, 2011, 9, 2012, 9).
+event(robert_hall__footballer_, team, footballer, 2012, 9, 2013, 9).
+event(robert_hall__footballer_, team, milton_keynes_dons, 2012, 9, 2013, 9).
+event(robert_hall__footballer_, team, footballer, 2015, 9, 2016, 9).
+event(robert_hall__footballer_, team, milton_keynes_dons, 2015, 9, 2016, 9).

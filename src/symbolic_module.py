@@ -6,11 +6,6 @@ import json
 import unicodedata
 import os
 
-
-datasets_ = {dataset: load_dataset("sxiong/TGQA", dataset)['test']
-            for dataset in ['TGQA_Story_TG_Trans', 'TimeQA_Story_TG_Trans', 'TempReason_Story_TG_Trans']
-            }
-
 # print(datasets_['TimeQA_Story_TG_Trans']['TG'])
 
 def clean_term(i: str):
@@ -172,7 +167,7 @@ def create_asp_instance_files(dataset, TG_type: str) -> None:
 
 
     # Create directory if it doesn't exist
-    directory = f"materials/{TG_type}"
+    directory = f"ASPinstances/{TG_type}"
     os.makedirs(directory, exist_ok=True)
 
     for instance in dataset:
@@ -187,7 +182,16 @@ def create_asp_instance_files(dataset, TG_type: str) -> None:
 def reason(instance_path, encoding_path) -> str:
     pass
 
-
+# run file to create instance files
 if __name__ == '__main__':
-    create_asp_instance_files(datasets_['TGQA_Story_TG_Trans'], 'TGQA')
-    create_asp_instance_files(datasets_['TimeQA_Story_TG_Trans'], 'TimeQA')
+
+    # load TGLLM test sets of each dataset
+    datasets = {dataset: load_dataset("sxiong/TGQA", dataset)['test']
+            for dataset in ['TGQA_Story_TG_Trans', 'TimeQA_Story_TG_Trans', 'TempReason_Story_TG_Trans']
+            }
+    
+    # create isntance files for TGQA and TimeQA datasets
+    create_asp_instance_files(datasets['TGQA_Story_TG_Trans'], 'TGQA')
+    create_asp_instance_files(datasets['TimeQA_Story_TG_Trans'], 'TimeQA')
+
+    # run reasoning module on instance files

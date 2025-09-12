@@ -1,9 +1,0 @@
-event(max_johnson, play_for, brighton_united_f_c_, 2002, 1, 2003, 12).
-event(max_johnson, play_for, eastbrook_city_f_c_, 2006, 1, 2010, 12).
-event(max_johnson, play_for, manchester_united_f_c_, 2010, 1, 2012, 12).
-event(max_johnson, play_for, oakland_united_f_c_, 2012, 1, 2014, 12).
-event(max_johnson, play_for, ravenswood_city_f_c_, 2014, 1, 2016, 12).
-event(max_johnson, play_for, springfield_united, 2016, 1, 2017, 12).
-event(max_johnson, born_in, manchester, 1989, 1, 1989, 1).
-event(max_johnson, play_for, liverpool_athletic_club, 2003, 1, 2003, 1).
-event(max_johnson, play_for, wolverhampton_united_f_c_, 2012, 1, 2012, 1).

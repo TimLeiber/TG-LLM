@@ -1,0 +1,10 @@
+event(henry_evans, married_to, samantha_johnson, 1942, 1, 1952, 12).
+event(samantha_johnson, married_to, henry_evans, 1942, 1, 1952, 12).
+event(john_marshall_playwright_, married_to, samantha_johnson, 1959, 1, 1978, 12).
+event(samantha_johnson, married_to, john_marshall__playwright_, 1959, 1, 1978, 12).
+event(henry_evans, born_in, san_francisco, 1903, 1, 1903, 1).
+event(john_marshall_playwright_, born_in, san_francisco, 1917, 1, 1917, 1).
+event(samantha_johnson, born_in, riverside, 1918, 1, 1918, 1).
+event(henry_evans, die, dallas, 1991, 1, 1991, 1).
+event(samantha_johnson, die, fairfield__california, 2005, 1, 2005, 1).
+event(john_marshall_playwright_, die, san_francisco, 2009, 1, 2009, 1).

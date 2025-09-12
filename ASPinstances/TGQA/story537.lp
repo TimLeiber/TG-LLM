@@ -1,0 +1,16 @@
+event(benjamin_richards, married_to, emily_thompson, 1924, 1, 1932, 12).
+event(emily_thompson, married_to, benjamin_richards, 1924, 1, 1932, 12).
+event(noel_sullivan, married_to, emily_thompson, 1932, 1, 1934, 12).
+event(emily_thompson, married_to, noel_sullivan, 1932, 1, 1934, 12).
+event(liam_thompson, married_to, noel_sullivan, 1937, 1, 1937, 12).
+event(emily_thompson, born_in, san_francisco, 1892, 1, 1892, 1).
+event(benjamin_richards, born_in, atlanta, 1904, 1, 1904, 1).
+event(benjamin_richards, married_to, olivia_griffin__actress_, 1934, 1, 1934, 1).
+event(olivia_griffin_actress_, married_to, benjamin_richards, 1934, 1, 1934, 1).
+event(samantha_williams, married_to, noel_sullivan, 1936, 1, 1936, 1).
+event(noel_sullivan, married_to, liam_thompson, 1937, 1, 1937, 1).
+event(benjamin_richards, die, greenwood, 1951, 1, 1951, 1).
+event(emily_thompson, die, silverton__indiana, 1961, 1, 1961, 1).
+event(liam_thompson, die, warrensville_county__ohio, 1963, 1, 1963, 1).
+event(samantha_williams, die, oceanview, 1967, 1, 1967, 1).
+event(olivia_griffin_actress_, die, harrisonville__kentucky, 1986, 1, 1986, 1).

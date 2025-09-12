@@ -1,9 +1,0 @@
-event(morgaro_gomis, team, windsor___eton, 2004, 9, 2005, 9).
-event(morgaro_gomis, team, windsor, 2005, 9, 2006, 9).
-event(morgaro_gomis, team, dagenham___redbridge, 2005, 9, 2006, 9).
-event(morgaro_gomis, team, barnet, 2005, 9, 2006, 9).
-event(morgaro_gomis, team, cowdenbeath, 2006, 9, 2007, 9).
-event(morgaro_gomis, team, dundee_united, 2007, 9, 2011, 9).
-event(morgaro_gomis, team, birmingham_city, 2011, 9, 2013, 9).
-event(morgaro_gomis, team, dundee_united, 2014, 9, 2015, 9).
-event(morgaro_gomis, team, heart_of_midlothian, 2014, 9, 2015, 9).

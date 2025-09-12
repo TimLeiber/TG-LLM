@@ -1,9 +1,0 @@
-event(sophie_reynolds, married_to, emily_thompson, 1969, 1, 1975, 12).
-event(emily_thompson, married_to, sophie_reynolds, 1969, 1, 1975, 12).
-event(michael_johnson, married_to, emily_thompson, 1997, 1, 2000, 12).
-event(emily_thompson, married_to, michael_johnson, 1997, 1, 2000, 12).
-event(emily_thompson, born_in, bristol, 1920, 1, 1920, 1).
-event(michael_johnson, born_in, oceanview, 1932, 1, 1932, 1).
-event(sophie_reynolds, born_in, san_francisco, 1933, 1, 1933, 1).
-event(emily_thompson, die, oakland, 2000, 1, 2000, 1).
-event(michael_johnson, die, oceanview, 2013, 1, 2013, 1).

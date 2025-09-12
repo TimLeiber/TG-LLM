@@ -1,0 +1,9 @@
+event(tomer_hemed, team, unknown, 2003, 9, 2004, 9).
+event(tomer_hemed, team, maccabi_haifa, 2005, 9, 2006, 9).
+event(tomer_hemed, team, maccabi_herzliya, 2008, 9, 2009, 9).
+event(tomer_hemed, team, bnei_yehuda_tel_aviv, 2008, 9, 2009, 9).
+event(tomer_hemed, team, ahi_nazareth, 2009, 9, 2010, 9).
+event(tomer_hemed, team, maccabi_haifa, 2009, 9, 2010, 9).
+event(tomer_hemed, team, mallorca, 2011, 9, 2014, 9).
+event(tomer_hemed, team, almeria, 2014, 9, 2015, 9).
+event(tomer_hemed, team, brighton___hove_albion, 2015, 9, 2016, 9).

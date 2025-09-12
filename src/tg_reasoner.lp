@@ -36,15 +36,13 @@ starts_at(event(S, R, O), SY) :- event(S,R,O,SY,_,_,_).
 
 % started_same_year(E, E'): event E and E' share the same start year
 started_same_year(event(S, R, O), event(S', R', O')) :-
-    E = event(S,R,O,SY,_,_,_),
-    E' = event(S',R',O',SY',_,_,_),
+    event(S,R,O,SY,_,_,_),
+    event(S',R',O',SY',_,_,_),
     SY == SY'.
 
 % was_still_happening(E, E'):  Event E was still ongoing when event E' started
 was_still_happening(E, E') :-
-    start(S,R,O,T),     end(S,R,O,EE),   E  = event(S,R,O),
+    start(S,R,O,T), end(S,R,O,EE), E  = event(S,R,O),
     start(S',R',O',T'), end(S',R',O',EE'), E' = event(S',R',O'),
     E != E',
     T <= T', T' <= EE.
-
-#show time_passed/4.

@@ -1,0 +1,9 @@
+event(emily_jones, play_for, hillside_united_f_c_, 1999, 1, 2006, 12).
+event(emily_jones, play_for, rockford_national_football_team, 2001, 1, 2014, 12).
+event(emily_jones, play_for, everton_rovers, 2006, 1, 2014, 12).
+event(emily_jones, play_for, club_juventus, 2014, 1, 2016, 12).
+event(emily_jones, born_in, harrison, 1980, 1, 1980, 1).
+event(emily_jones, play_for, california_dolphins, 1999, 1, 1999, 1).
+event(emily_jones, play_for, sapphire_united_f_c_, 2000, 1, 2000, 1).
+event(emily_jones, play_for, silverlight_city_soccer_club, 2002, 1, 2002, 1).
+event(emily_jones, play_for, ny_thunder, 2016, 1, 2016, 1).

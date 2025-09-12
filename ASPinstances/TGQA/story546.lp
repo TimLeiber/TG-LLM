@@ -1,0 +1,12 @@
+event(mike_reynolds, play_for, c_f__redmond, 2006, 1, 2007, 12).
+event(mike_reynolds, play_for, denver_national_under_20_basketball_team, 2006, 1, 2007, 12).
+event(mike_reynolds, play_for, d_c__mavericks, 2007, 1, 2009, 12).
+event(mike_reynolds, play_for, r_n__oakdale, 2009, 1, 2010, 12).
+event(mike_reynolds, play_for, chicago_bulls, 2006, 1, 2010, 12).
+event(mike_reynolds, play_for, d_p__northwood_juniors, 2010, 1, 2013, 12).
+event(mike_reynolds, play_for, r_t__wolverhampton, 2013, 1, 2016, 12).
+event(mike_reynolds, born_in, glenville, 1987, 1, 1987, 1).
+event(mike_reynolds, play_for, los_angeles_tigers_football_team, 2006, 1, 2006, 1).
+event(mike_reynolds, play_for, seattle_united_fc, 2013, 1, 2013, 1).
+event(mike_reynolds, play_for, wexford_city, 2015, 1, 2015, 1).
+event(mike_reynolds, play_for, florida_panthers_hockey_team, 2016, 1, 2016, 1).

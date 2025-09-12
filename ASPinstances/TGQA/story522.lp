@@ -1,0 +1,11 @@
+event(adam_johnson, play_for, london_sporting_club, 2000, 1, 2003, 12).
+event(adam_johnson, play_for, denver_national_under_20_basketball_team, 2001, 1, 2003, 12).
+event(adam_johnson, play_for, greenland_national_under_21_football_team, 2003, 1, 2005, 12).
+event(adam_johnson, play_for, l_j__queensborough, 2004, 1, 2005, 12).
+event(adam_johnson, play_for, blazing_tigers__hartford_, 2003, 1, 2006, 12).
+event(adam_johnson, play_for, blueberry_city_fc, 2005, 1, 2006, 12).
+event(adam_johnson, play_for, phoenix_united, 2006, 1, 2007, 12).
+event(adam_johnson, play_for, acme_united_f_c_, 2007, 1, 2009, 12).
+event(adam_johnson, born_in, austin, 1983, 1, 1983, 1).
+event(adam_johnson, play_for, seattle_soccer_club, 2001, 1, 2001, 1).
+event(adam_johnson, play_for, lancaster_united_soccer_club, 2011, 1, 2011, 1).

@@ -1,0 +1,14 @@
+event(megan_thompson, married_to, simon_miller, 1979, 1, 1984, 12).
+event(megan_thompson, married_to, liam_henderson, 1992, 1, 1993, 12).
+event(liam_henderson, married_to, megan_thompson, 1992, 1, 1993, 12).
+event(sophie_adams, married_to, simon_miller, 1991, 1, 1993, 12).
+event(simon_miller, born_in, scarborough__maine, 1940, 1, 1940, 1).
+event(lucas_mitchell, born_in, riverton__nevada, 1947, 1, 1947, 1).
+event(megan_thompson, born_in, greenwood, 1950, 1, 1950, 1).
+event(sophie_adams, born_in, oceanview, 1955, 1, 1955, 1).
+event(liam_henderson, born_in, springfield, 1958, 1, 1958, 1).
+event(megan_thompson, create, lucas_mitchell, 1976, 1, 1976, 1).
+event(simon_miller, married_to, megan_thompson, 1979, 1, 1979, 1).
+event(megan_thompson, create, sightfinder__film_, 1980, 1, 1980, 1).
+event(megan_thompson, create, max_steel, 1987, 1, 1987, 1).
+event(simon_miller, married_to, sophie_adams, 1991, 1, 1991, 1).

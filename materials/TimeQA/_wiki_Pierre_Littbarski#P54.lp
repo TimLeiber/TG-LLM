@@ -1,9 +1,0 @@
-event(pierre_littbarski, team, fc_koln, 1978, 9, 1979, 9).
-event(pierre_littbarski, team, west_german_national_team, 1978, 9, 1979, 9).
-event(pierre_littbarski, team, fc_koln, 1979, 9, 1981, 9).
-event(pierre_littbarski, team, __fc_koln, 1981, 9, 1986, 9).
-event(pierre_littbarski, team, germany, 1986, 9, 1990, 9).
-event(pierre_littbarski, team, fc_koln, 1990, 9, 1993, 9).
-event(pierre_littbarski, team, west_german_national_team, 1990, 9, 1993, 9).
-event(pierre_littbarski, team, rc_paris, 1993, 9, 1995, 9).
-event(pierre_littbarski, team, unknown, 1995, 9, 1997, 9).

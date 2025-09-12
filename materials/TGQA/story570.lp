@@ -1,9 +1,0 @@
-event(benjamin_thompson, married_to, hannah_davis, 1957, 1, 1969, 12).
-event(hannah_davis, married_to, benjamin_thompson, 1957, 1, 1969, 12).
-event(benjamin_thompson, married_to, emily_johnson, 1974, 1, 1982, 12).
-event(emily_johnson, married_to, benjamin_thompson, 1974, 1, 1982, 12).
-event(chris_johnson, affiliated_to, liberty_party__boston_, 1966, 1, 2004, 12).
-event(benjamin_thompson, born_in, tartanville, 1930, 1, 1930, 1).
-event(hannah_davis, born_in, coventry, 1936, 1, 1936, 1).
-event(hannah_davis, married_to, chris_johnson, 2003, 1, 2003, 1).
-event(chris_johnson, affiliated_to, freedom_alliance_party, 2004, 1, 2004, 1).

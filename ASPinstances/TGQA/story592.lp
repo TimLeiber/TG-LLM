@@ -1,0 +1,12 @@
+event(sammy_mitchell, play_for, united_tigers, 1988, 1, 1993, 12).
+event(sammy_mitchell, play_for, arizona_city_national_under_18_football_team, 1992, 1, 1993, 12).
+event(sammy_mitchell, play_for, vq_malvern_wanderers, 1993, 1, 1996, 12).
+event(sammy_mitchell, play_for, blue_thunder_united, 1995, 1, 1996, 12).
+event(sammy_mitchell, play_for, manchester_united, 1996, 1, 1998, 12).
+event(sammy_mitchell, play_for, avalon_maroons, 1998, 1, 1999, 12).
+event(sammy_mitchell, play_for, riverdale_united, 1999, 1, 2000, 12).
+event(sammy_mitchell, play_for, hillside_united, 2000, 1, 2004, 12).
+event(sammy_mitchell, play_for, sunset_town_fc, 2004, 1, 2007, 12).
+event(sammy_mitchell, born_in, jupiter, 1975, 1, 1975, 1).
+event(sammy_mitchell, play_for, newcastle_united_football_club, 1992, 1, 1992, 1).
+event(sammy_mitchell, play_for, lionheart_fc, 2003, 1, 2003, 1).

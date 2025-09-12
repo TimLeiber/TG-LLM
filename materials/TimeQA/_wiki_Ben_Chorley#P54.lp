@@ -1,9 +1,0 @@
-event(ben_chorley, team, arsenal, 2001, 9, 2003, 9).
-event(ben_chorley, team, brentford, 2001, 9, 2003, 9).
-event(ben_chorley, team, wimbledon, 2003, 9, 2004, 9).
-event(ben_chorley, team, milton_keynes_dons, 2004, 9, 2006, 9).
-event(ben_chorley, team, gillingham, 2006, 9, 2007, 9).
-event(ben_chorley, team, tranmere_rovers, 2007, 9, 2009, 9).
-event(ben_chorley, team, leyton_orient, 2009, 9, 2013, 9).
-event(ben_chorley, team, stevenage, 2013, 9, 2014, 9).
-event(ben_chorley, team, portsmouth, 2014, 9, 2015, 9).

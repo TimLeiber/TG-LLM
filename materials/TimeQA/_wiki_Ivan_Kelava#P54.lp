@@ -1,9 +1,0 @@
-event(ivan_kelava, team, dinamo_zagrebs, 2004, 9, 2005, 9).
-event(ivan_kelava, team, unknown, 2006, 9, 2007, 9).
-event(ivan_kelava, team, dinamo_zagrebs, 2007, 9, 2007, 9).
-event(ivan_kelava, team, dinamo_zagrebs, 2008, 9, 2009, 9).
-event(ivan_kelava, team, croatian_national_under_21_football_team, 2008, 9, 2009, 9).
-event(ivan_kelava, team, lokomotiva, 2009, 9, 2010, 9).
-event(ivan_kelava, team, croatian_national_under_21_football_team, 2009, 9, 2010, 9).
-event(ivan_kelava, team, udinese, 2013, 9, 2015, 9).
-event(ivan_kelava, team, granada_cf, 2015, 9, 2016, 9).

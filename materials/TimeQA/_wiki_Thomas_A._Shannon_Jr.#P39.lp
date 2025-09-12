@@ -1,9 +1,0 @@
-event(thomas_a__shannon_jr_, position, assistant_secretary_of_state_for_western_hemisphere_affairs, 2005, 10, 2009, 11).
-event(thomas_a__shannon_jr_, position, united_states_ambassador_to_brazil, 2010, 2, 2013, 9).
-event(thomas_a__shannon_jr_, position, counselor_of_the_united_states_department_of_state, 2013, 12, 2016, 2).
-event(thomas_a__shannon_jr_, position, under_secretary_for_political_affairs, 2016, 2, 2017, 1).
-event(thomas_a__shannon_jr_, position, secretary_of_state_of_the_united_states, 2017, 1, 2017, 2).
-event(thomas_a__shannon_jr_, position, under_secretary_for_political_affairs, 2017, 1, 2017, 2).
-event(thomas_a__shannon_jr_, position, deputy_secretary_of_state, 2017, 2, 2017, 5).
-event(thomas_a__shannon_jr_, position, under_secretary_for_political_affairs, 2017, 2, 2017, 5).
-event(thomas_a__shannon_jr_, position, under_secretary_for_political_affairs, 2017, 5, 2018, 6).

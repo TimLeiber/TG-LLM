@@ -1,9 +1,0 @@
-event(oumar_niasse, team, us_ouakam, 2007, 9, 2012, 2).
-event(oumar_niasse, team, brann, 2012, 2, 2012, 7).
-event(oumar_niasse, team, turkish_super_lig_club, 2013, 9, 2014, 9).
-event(oumar_niasse, team, lokomotiv_moscow, 2014, 9, 2016, 9).
-event(oumar_niasse, team, everton, 2016, 9, 2016, 2).
-event(oumar_niasse, team, everton, 2016, 2, 2017, 1).
-event(oumar_niasse, team, hull_city, 2016, 2, 2017, 1).
-event(oumar_niasse, team, hull_city, 2017, 1, 2017, 5).
-event(oumar_niasse, team, cardiff_city, 2019, 1, 2019, 6).
