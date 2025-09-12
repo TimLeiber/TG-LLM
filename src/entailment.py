@@ -1,3 +1,5 @@
+# functions to run encoding over all ASP instances and retrieve facts entailed by instance
+
 import os
 import json
 from subprocess import run, PIPE, TimeoutExpired
@@ -54,4 +56,3 @@ if __name__ == "__main__":
     encoding = "src/tg_reasoner.lp"
     instance_dirs = ["ASPinstances/TGQA", "ASPinstances/TimeQA"]
     run_instances("clingo", encoding, instance_dirs, timeout=1000, out_json="results/asp_results.json")
-    

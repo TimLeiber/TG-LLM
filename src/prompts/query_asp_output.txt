@@ -1,0 +1,70 @@
+You will be tasked with answering the following question given events and by choosing the most appropriate predicate type(s) to answer them.
+
+Question: When did the event (Mike Johnson was born in Kingston, Wyoming) start?
+
+You will be given all events from which the other temporal predicates are derived regardless:
+event(S, R, O, SY, SM, EY, EM): 
+An event with subject S, relation R, and object O 
+that starts in year SY and month SM 
+and ends in year EY and month EM.
+
+Available predicate types and their meanings:
+- ordering_on_start_years(event(S, R, O), Idx): Event’s relative position in chronological order.
+- length(event(S, R, O), Y, M): Duration of an event in years and months.
+- time_passed(event(S, R, O), event(S', R', O'), Y, M): Time elapsed between two events.
+- starts_at(event(S, R, O), SY): Event starts in year SY.
+- started_same_year(event(S, R, O), event(S', R', O')): Two events share the same start year.
+- was_still_happening(event(S, R, O), event(S', R', O')): Event E was ongoing when event E' started.
+
+---
+
+### Example 1
+Question: What happened right before the event (some event) starts?  
+Expected output:
+{
+  "reasoning": "This question asks which event occurred immediately before another event began. To answer this, we need the relative order of events in time. The 'ordering_on_start_years' predicate provides exactly this.",
+  "predicate_choice": ["ordering_on_start_years"]
+}
+
+---
+
+### Example 2
+Question: In what year did the event (Person X was born in City Y) start?  
+Expected output:
+{
+  "reasoning": "This question directly asks for the starting year of a single event. The 'starts_at' predicate gives the start year of an event.",
+  "predicate_choice": ["starts_at"]
+}
+
+---
+
+### Example 3
+Question: True or false: event (Event A) was still happening when event (Event B) started?  
+Expected output:
+{
+  "reasoning": "This question is about whether two events overlap. The 'was_still_happening' predicate directly captures this relationship.",
+  "predicate_choice": ["was_still_happening"]
+}
+
+---
+
+### Example 4
+Question: Which event lasted longer, (Event A) or (Event B)?  
+Expected output:
+{
+  "reasoning": "This question requires comparing the durations of two events. The 'length' predicate provides each event’s duration in years and months, making it possible to answer.",
+  "predicate_choice": ["length"]
+}
+
+---
+
+Instructions:
+- Select one or more predicate types that best match the question.  
+- Provide a short explanation of how the question maps to the predicate type(s).  
+- Follow the required output format strictly.  
+
+Output format (strict):
+{
+  "reasoning": "<step-by-step explanation of how the question maps to the predicate type(s)>",
+  "predicate_choice": ["<predicate_1>", "<predicate_2>", ...]
+}

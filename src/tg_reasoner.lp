@@ -21,6 +21,14 @@ length(event(S, R, O), Y, M) :-
     Y = L / 12,
     M = L \ 12.
 
+% longer_than(E, E'): event E lasted longer in duration than event E'
+longer_than(event(S, R, O), event(S2, R2, O2)) :-
+    length(event(S, R, O), Y1, M1),
+    length(event(S2, R2, O2), Y2, M2),
+    D1 = Y1 * 12 + M1,
+    D2 = Y2 * 12 + M2,
+    D1 > D2.
+
 % time_passed(E, E', Y, M): Event event E' started Y years and M months after event E'
 time_passed(E, E', Y, M) :-
     start(S,R,O,T), E = event(S,R,O),
