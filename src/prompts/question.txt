@@ -1,7 +1,10 @@
-Now, given the following base events and facts derived from your chosen predicate type:
+Now, given the following base events, temporal graph, and facts derived from your chosen predicate type:
 
 Events:
 $EVENTS
+
+Temporal Graph (TG):
+$TG
 
 Facts:
 $ASP_FACTS
@@ -17,6 +20,11 @@ Events:
 event(person_a,born_in,town_x,1900,1,1900,1)
 event(person_a,married_to,person_b,1925,6,1950,6)
 event(person_a,died_in,city_y,1980,3,1980,3)
+
+Temporal Graph (TG):
+ordering_on_start_years(event(person_a,born_in,town_x),1)
+ordering_on_start_years(event(person_a,married_to,person_b),2)
+ordering_on_start_years(event(person_a,died_in,city_y),3)
 
 Facts:
 ordering_on_start_years(event(person_a,born_in,town_x),1)
@@ -38,7 +46,7 @@ Expected output:
 }
 
 Instructions:
-- Use both the Events and Facts sections to support your reasoning.
+- Use the Events, TG, and Facts sections to support your reasoning.
 - Clearly explain step by step how the facts lead to the chosen answer.
 - Select exactly one candidate answer.
 - IMPORTANT: The value of "answer_choice" **must exactly match, character for character, one of the candidate answers listed above.**

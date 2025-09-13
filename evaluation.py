@@ -2,7 +2,7 @@ import json
 import re
 from collections import Counter
 
-RESULTS_PATH = "results/llm_results.json"
+RESULTS_PATH = "results/llm_results_tg_only.json"
 
 def normalize_text(s: str) -> str:
     """Lowercase and remove punctuation/articles/extra spaces for EM/F1."""

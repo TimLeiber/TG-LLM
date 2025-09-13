@@ -1,4 +1,4 @@
-def make_question_prompt(question: str, asp_facts: str, candidates: str, events: str) -> str:
+def make_question_prompt(question: str, asp_facts: str, candidates: str, events: str, TG: list) -> str:
     """
     Build the question prompt given:
     - a question
@@ -15,6 +15,7 @@ def make_question_prompt(question: str, asp_facts: str, candidates: str, events:
     question_prompt = question_prompt.replace('$CANDIDATES', candidates)
     question_prompt = question_prompt.replace('$ASP_FACTS', str(asp_facts))
     question_prompt = question_prompt.replace('$EVENTS', str(events))
+    question_prompt = question_prompt.replace('$TG', TG)
 
     return question_prompt
 

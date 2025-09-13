@@ -48,6 +48,7 @@ def run_instance(instance, system_prompt=load_system_prompt(), temperature=0):
         predicate_choice = [predicate_choice]
 
     # --- Stage 2: answer selection ---
+    # --- Stage 2: answer selection ---
     story_key = get_story_key(instance["id"])
     if story_key not in asp_results:
         raise KeyError(f"{story_key} not found in asp_results.json")
@@ -57,13 +58,15 @@ def run_instance(instance, system_prompt=load_system_prompt(), temperature=0):
         asp_facts.extend(asp_results[story_key].get(pred, []))
 
     candidates_str = "\n".join(instance["candidates"])
-    events_str = "\n".join(instance["TG"]) if "TG" in instance else ""
+    events_str = "\n".join(instance["TG"]) if "TG" in instance else ""  # base events
+    tg_str = "\n".join(instance["TG"]) if "TG" in instance else ""      # temporal graph
 
     question_prompt = make_question_prompt(
         instance["question"],
         asp_facts,
         candidates_str,
-        events_str
+        events_str,
+        tg_str  # NEW: pass TG explicitly
     )
 
     stage2_resp = client.chat.completions.create(
@@ -166,11 +169,3 @@ if __name__ == "__main__":
     run_batch(n=50, mode="stratified")
     with open("results/llm_results.json") as f:
         results = json.load(f)
-
-    total = len(results)
-    correct = sum(1 for r in results.values() if r.get("match"))
-    accuracy = correct / total if total > 0 else 0
-
-    print(f"Total: {total}")
-    print(f"Correct: {correct}")
-    print(f"Accuracy: {accuracy:.2%}")
