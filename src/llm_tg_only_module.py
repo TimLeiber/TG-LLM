@@ -6,7 +6,8 @@ from openai import OpenAI
 from datasets import load_dataset
 
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-
+MODEL = "gpt-3.5-turbo"
+DATA = "TimeQA_TGR"  # or "TimeQA_TGR"
 
 def load_system_prompt():
     with open("src/prompts/system.txt", "r") as f:
@@ -47,7 +48,7 @@ Instructions:
 
     # --- Query model ---
     resp = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=MODEL,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question_prompt},
@@ -96,10 +97,15 @@ def sample_stratified(dataset, n=50, seed=42):
     random.seed(seed)
     buckets = defaultdict(list)
     for inst in dataset:
-        buckets[inst["Q-Type"]].append(inst)
+        qtype = inst.get("Q-Type") or "Unknown"
+        buckets[qtype].append(inst)
+
+    # if all Q-Types are "Unknown", just sample randomly
+    if len(buckets) == 1 and "Unknown" in buckets:
+        return sample_random(dataset, n, seed)
 
     n_types = len(buckets)
-    per_type = n // n_types
+    per_type = max(1, n // n_types)
 
     sampled = []
     for qtype, items in buckets.items():
@@ -113,8 +119,8 @@ def sample_stratified(dataset, n=50, seed=42):
 # Batch runner
 # -----------------------------
 
-def run_batch_tg_only(n=50, mode="random", output_path="results/llm_results_tg_only.json"):
-    dataset = load_dataset("sxiong/TGQA", "TGQA_TGR")["test"]
+def run_batch_tg_only(n=50, mode="random", output_path=None, data=DATA):
+    dataset = load_dataset("sxiong/TGQA", data)["test" if data == "TGQA_TGR" else "hard_test"]
 
     if mode == "random":
         subset = sample_random(dataset, n)
@@ -122,6 +128,9 @@ def run_batch_tg_only(n=50, mode="random", output_path="results/llm_results_tg_o
         subset = sample_stratified(dataset, n)
     else:
         raise ValueError("mode must be 'random' or 'stratified'")
+
+    if output_path is None:
+        output_path = f"results/llm_results_tg_only_{MODEL}_{data}.json"
 
     results = {}
     for i, instance in enumerate(subset):
@@ -138,5 +147,4 @@ def run_batch_tg_only(n=50, mode="random", output_path="results/llm_results_tg_o
 
 
 if __name__ == "__main__":
-    # Example: run 50 stratified samples
-    run_batch_tg_only(n=50, mode="stratified")
+    run_batch_tg_only(n=500, mode="stratified")

@@ -1,8 +1,9 @@
+import os
 import json
 import re
 from collections import Counter
 
-RESULTS_PATH = "results/llm_results_tg_only.json"
+RESULTS_DIR = "results"
 
 def normalize_text(s: str) -> str:
     """Lowercase and remove punctuation/articles/extra spaces for EM/F1."""
@@ -27,8 +28,8 @@ def f1_score(pred: str, gold: str) -> float:
     recall = num_same / len(gold_tokens)
     return 2 * precision * recall / (precision + recall)
 
-def evaluate(results_path=RESULTS_PATH):
-    with open(results_path) as f:
+def evaluate_file(path: str):
+    with open(path) as f:
         results = json.load(f)
 
     total = 0
@@ -37,8 +38,8 @@ def evaluate(results_path=RESULTS_PATH):
     f1 = 0.0
 
     for instance_id, res in results.items():
-        if "error" in res:
-            continue  # skip failed cases
+        if "error" in res or "answer_choice" not in res:
+            continue  # skip failed or invalid cases
         total += 1
 
         pred = res["answer_choice"]
@@ -59,14 +60,32 @@ def evaluate(results_path=RESULTS_PATH):
         em += em_this
         f1 += f1_this
 
-    acc = acc / total if total else 0
-    em = em / total if total else 0
-    f1 = f1 / total if total else 0
+    if total == 0:
+        return None
 
-    print(f"Evaluated {total} instances")
-    print(f"Accuracy: {acc:.3f}")
-    print(f"Exact Match (EM): {em:.3f}")
-    print(f"F1: {f1:.3f}")
+    return {
+        "file": os.path.basename(path),
+        "total": total,
+        "acc": acc / total,
+        "em": em / total,
+        "f1": f1 / total,
+    }
+
+def evaluate_all(results_dir=RESULTS_DIR):
+    files = [f for f in os.listdir(results_dir) if f.endswith(".json") and f != "asp_results.json"]
+
+    all_results = []
+    for fname in files:
+        res = evaluate_file(os.path.join(results_dir, fname))
+        if res:
+            all_results.append(res)
+
+    for r in all_results:
+        print(f"\nFile: {r['file']}")
+        print(f"  Evaluated {r['total']} instances")
+        print(f"  Accuracy: {r['acc']*100:.5f}%")
+        print(f"  Exact Match (EM): {r['em']*100:.5f}%")
+        print(f"  F1: {r['f1']*100:.5f}%")
 
 if __name__ == "__main__":
-    evaluate()
+    evaluate_all()

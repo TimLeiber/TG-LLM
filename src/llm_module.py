@@ -8,6 +8,8 @@ from prompt_generation import make_question_prompt, query_asp_output_prompt
 
 
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+MODEL = "gpt-3.5-turbo"
+DATA = 'TimeQA_TGR'
 
 # Load ASP results (facts per story)
 with open("results/asp_results.json") as f:
@@ -15,8 +17,20 @@ with open("results/asp_results.json") as f:
 
 
 def get_story_key(instance_id: str) -> str:
-    """Map dataset id like 'story500_Q0_0' -> 'story500.lp'"""
-    return instance_id.split("_")[0] + ".lp"
+    """
+    Map dataset id like '/wiki/Huw_Irranca-Davies#P39_hard_5'
+    -> '_wiki_Huw_Irranca-Davies#P39.lp'
+    """
+    # strip "_hard" and trailing question index
+    if "_hard" in instance_id:
+        base = instance_id.split("_hard")[0]
+    else:
+        base = instance_id
+    
+    # replace leading '/' with '_' (and any other '/' if present)
+    base = base.replace("/", "_")
+
+    return f"{base}.lp"
 
 def load_system_prompt():
     with open("src/prompts/system.txt", "r") as f:
@@ -29,7 +43,7 @@ def run_instance(instance, system_prompt=load_system_prompt(), temperature=0):
     # --- Stage 1: predicate choice ---
     query_prompt = query_asp_output_prompt(instance["question"])
     stage1_resp = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=MODEL,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": query_prompt},
@@ -70,7 +84,7 @@ def run_instance(instance, system_prompt=load_system_prompt(), temperature=0):
     )
 
     stage2_resp = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=MODEL,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question_prompt},
@@ -123,10 +137,35 @@ def sample_stratified(dataset, n=50, seed=42):
     random.seed(seed)
     buckets = defaultdict(list)
     for inst in dataset:
-        buckets[inst["Q-Type"]].append(inst)
+        qtype = inst.get("Q-Type") or "Unknown"
+        buckets[qtype].append(inst)
+
+    # if all Q-Types are "Unknown", just sample randomly
+    if len(buckets) == 1 and "Unknown" in buckets:
+        return sample_random(dataset, n, seed)
 
     n_types = len(buckets)
-    per_type = n // n_types
+    per_type = max(1, n // n_types)
+
+    sampled = []
+    for qtype, items in buckets.items():
+        if items:
+            sampled.extend(random.sample(items, min(per_type, len(items))))
+
+    return sampled
+def sample_stratified(dataset, n=50, seed=42):
+    random.seed(seed)
+    buckets = defaultdict(list)
+    for inst in dataset:
+        qtype = inst.get("Q-Type") or "Unknown"
+        buckets[qtype].append(inst)
+
+    # if all Q-Types are "Unknown", just sample randomly
+    if len(buckets) == 1 and "Unknown" in buckets:
+        return sample_random(dataset, n, seed)
+
+    n_types = len(buckets)
+    per_type = max(1, n // n_types)
 
     sampled = []
     for qtype, items in buckets.items():
@@ -140,8 +179,8 @@ def sample_stratified(dataset, n=50, seed=42):
 # Batch runner
 # -----------------------------
 
-def run_batch(n=50, mode="random", output_path="results/llm_results.json"):
-    dataset = load_dataset("sxiong/TGQA", "TGQA_TGR")["test"]
+def run_batch(n=50, mode="random", output_path=f"results/llm_results_{MODEL}_{DATA}.json", data=DATA):
+    dataset = load_dataset("sxiong/TGQA", data)["test" if data == 'TGQA_TGR' else 'hard_test']
 
     if mode == "random":
         subset = sample_random(dataset, n)
@@ -166,6 +205,4 @@ def run_batch(n=50, mode="random", output_path="results/llm_results.json"):
 
 if __name__ == "__main__":
     # Example: run 50 stratified samples
-    run_batch(n=50, mode="stratified")
-    with open("results/llm_results.json") as f:
-        results = json.load(f)
+    run_batch(n=500, mode="stratified")
