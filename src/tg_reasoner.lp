@@ -8,7 +8,7 @@ end(S,R,O,T) :-
     event(S,R,O,_,_,EY,EM),
     T = EY*12 + (EM - 1).
 
-% event2idx(S, R, O, T): Event with subject S, relation R and object O starts at temporal index Idx where Idx ranges from 1 to n (interpretable order on events)
+% ordering_on_start_years(E, T): Event with subject E starts at temporal index Idx where Idx ranges from 1 to n (interpretable order on events)
 ordering_on_start_years(event(S, R, O), Idx + 1) :-
     start(S,R,O,T),
     Idx = #count {S2,R2,O2,T2 : start(S2,R2,O2,T2), T2 < T }.
